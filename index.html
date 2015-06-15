@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="ShopApp">
+<head>
+	<meta charset="UTF-8">
+	<title> Angular Application:Sports Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<script src="js/controller.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="main" ng-controller="ShopFunction">
+		<div class="search">
+			<h1>Sports Store</h1>
+			<label>Search</label>
+			<input type="text" ng-model="query1">
+					<label>Sort by:
+			<select ng-model="orderShop">
+				<option value="name" selected>Name</option>
+				<option value="reknown">Reknown</option>
+			</select>
+		</label>
+		<br>
+		<label>
+			<input type="radio" ng-model="direction" name="direction" checked>
+			Ascending
+		</label>
+		<label>	
+			<input type="radio" ng-model="direction" name="direction" value="reverse" >
+			Descending
+		</label>
+		<p>&nbsp;	There are <span ng-bind="shopVariable.length"></span> items available</p>
+	</div>
+		<ul>
+			<li class="itemHolder" ng-repeat="item in shopVariable | orderBy:'-price' | filter:query1 | orderBy:orderShop:direction">
+			<img ng-src="img/{{item.image}}.jpg">
+			<div>
+				<h3> {{item.name | uppercase }}</h3><p class="rightDate">Price Revised on: {{item.dateAdded | date:'dd/MM/yy'}}, <span>${{item.price | number:1 }}</span></p><p class="rightPrice"></p>
+				<p> {{item.description}}</p>	
+			</div>	
+			</li> 
+		</ul>
+	</div>
+</body>
+</html>
