@@ -3,15 +3,15 @@
 			"name" 		 : "Table Tennis Kit",
 			"description": "some description about Table Tennis Kit",
 			"image"	:  "TT Kit",
-			"price" : "23.78",
+			"price" : "280.00",
 			"dateAdded" : "1403926823000",
-			"category" : "expensive"
+			"category" : "cheap"
 		},
 		{
 			"name" 		 : "Badminton Kit",
 			"description": "some description about Badminton Kit.",
 			"image"	:  "BT Kit",
-			"price" : "18.34",
+			"price" : "350.00",
 			"dateAdded" : "1399779623000",
 			"category" : "expensive"
 		},
@@ -19,17 +19,17 @@
 			"name" 		 : "Cricket Kit",
 			"description": "some description about Cricket Kit.",
 			"image"	:  "CT Kit",
-			"price" : "35.98",
+			"price" : "699.00",
 			"dateAdded" : "1402544423000",
-			"category" : "cheap"
+			"category" : "expensive"
 		},
 		{
 			"name" 		 : "Tennis Kit",
 			"description": "some description about Tennis Kit.",
 			"image"	:  "Tennis",
-			"price" : "28.34",
+			"price" : "199.00",
 			"dateAdded" : "1399889623000",
-			"category" : "expensive"
+			"category" : "cheap"
 		}
 		
 ]
