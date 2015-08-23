@@ -34,7 +34,7 @@
 			<li class="itemHolder" ng-repeat="item in shopVariable | orderBy:'-price' | filter:query1 | orderBy:orderShop:direction">
 			<img ng-src="img/{{item.image}}.jpg">
 			<div>
-				<h3> {{item.name | uppercase }}</h3><p class="rightDate">Price Revised on: {{item.dateAdded | date:'dd/MM/yy'}}, <span>${{item.price | number:1 }}</span></p><p class="rightPrice"></p>
+				<h3> {{item.name | uppercase }}</h3><p class="rightDate">Price Revised on: {{item.dateAdded | date:'dd/MM/yy'}}, <span>Rs. {{item.price | number:1 }}</span></p><p class="rightPrice"></p>
 				<p> {{item.description}}</p>	
 			</div>	
 			</li> 
